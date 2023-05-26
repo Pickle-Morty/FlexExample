@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link href="./styles.css" />
+</head>
+<style>
+    .wrapper {
+        display: flex;
+        color: black;
+        font-size: 16px;
+        font-weight: 400px;
+    }
+
+    .flex_w {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+    }
+
+    .card {
+        width: 100%;
+        border: 1px solid gray;
+
+    }
+
+    .card__title {
+        background: rgb(186, 186, 129);
+        font-size: 18px;
+        font-weight: 600px;
+
+    }
+
+    @media (max-width: 768px) {
+        .flex_w {
+            width: 100%;
+        }
+        .wrapper {
+            flex-direction: column;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="wrapper">
+        <div class="flex_w">
+            <div class="card">
+                <div class="card__title">Название</div>
+                <div class="card__contant">Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quidem sit est id nostrum culpa temporibus modi doloribus ex facere optio. sit amet consectetur,
+                    adipisicing elit. Eius debitis, soluta aperiam maxime quia obcaecati deleniti delectus quis!
+                    Debitis, quam facilis beatae, expedita consequuntur dignissimos recusandae ratione vitae modi eaque
+                    veritatis asperiores quae rem error dolor. Ad sint omnis illum et iusto, distinctio neque voluptas
+                    impedit ipsa magnam voluptates blanditiis.</div>
+            </div>
+            <div class="card">
+                <div class="card__title">Название</div>
+                <div class="card__contant"></div>
+            </div>
+            <div class="card">
+                <div class="card__title">Название</div>
+                <div class="card__contant">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius debitis,
+                    soluta aperiam maxime quia obcaecati deleniti delectus quis! Debitis, quam facilis beatae, expedita
+                    consequuntur dignissimos recusandae ratione vitae modi eaque veritatis asperiores quae rem error
+                    dolor. Ad sint omnis illum et iusto, distinctio neque voluptas impedit ipsa magnam voluptates
+                    blanditiis.</div>
+            </div>
+        </div>
+        <div class="flex_w">
+            <div class="card">
+                <div class="card__title">Название</div>
+                <div class="card__contant"></div>
+            </div>
+            <div class="card">
+                <div class="card__title">Название</div>
+                <div class="card__contant">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius debitis,
+                    soluta aperiam maxime quia obcaecati deleniti delectus quis! Debitis, quam facilis beatae, expedita
+                    consequuntur dignissimos recusandae ratione vitae modi eaque veritatis asperiores quae rem error
+                    dolor. Ad sint omnis illum et iusto, distinctio neque voluptas impedit ipsa magnam voluptates
+                    blanditiis.</div>
+            </div>
+            <div class="card">
+                <div class="card__title">Название</div>
+                <div class="card__contant">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius debitis,
+                    soluta aperiam maxime quia obcaecati deleniti delectus quis! Debitis, quam facilis beatae, expedita
+                    consequuntur dignissimos recusandae ratione vitae modi eaque veritatis asperiores quae rem error
+                    dolor. Ad sint omnis illum et iusto, distinctio neque voluptas impedit ipsa magnam voluptates
+                    blanditiis.</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
